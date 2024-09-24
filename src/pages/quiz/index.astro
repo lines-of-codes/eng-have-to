@@ -1,0 +1,10 @@
+---
+import BasicLayout from "../../layouts/BasicLayout.astro";
+import InteractiveQuiz from "../../components/InteractiveQuiz.svelte";
+---
+
+<BasicLayout title="Don't have to - English">
+    <div class="flex items-center justify-center mt-16 mx-10">
+        <InteractiveQuiz client:load />
+    </div>
+</BasicLayout>
