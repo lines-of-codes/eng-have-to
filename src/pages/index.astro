@@ -1,16 +1,17 @@
 ---
-
+import BasicLayout from "../layouts/BasicLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BasicLayout title="Have to, or not have to? - English">
+    <main class="flex flex-col justify-center items-center mt-16">
+        <h1>Have to, or not have to?</h1>
+        <div class="grid text-center">
+            <a href="/have-to/" class="mt-4 rounded-3xl bg-gray-100 hover:bg-gray-200 transition-colors py-2 px-4 text-black">
+                Have to
+            </a>
+            <a href="/dont-have-to/" class="mt-2 rounded-3xl bg-gray-100 hover:bg-gray-200 transition-colors py-2 px-4 text-black">
+                Don't have to
+            </a>
+        </div>
+	</main>
+</BasicLayout>
